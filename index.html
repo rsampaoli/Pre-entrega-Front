@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Native Outdoors</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1 class="logo">Native Outdoors</h1>
+
+        <ul class="nav-list">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#reseñas">Reseñas</a></li>
+        </ul>
+    </nav>
+    <main aria-labelledby="title">
+
+
+        <section id="productos" class="products">
+            <header>
+                <h2>Nuestros Productos</h2>
+                <p>Conocé algunos de los productos destacados que ofrecemos.</p>
+            </header>
+
+            <div class="product-list">
+                <article class="product-card">
+                    <img src="imgs/productos/gorra.webp" alt="Gorra técnica para trekking color negro">
+                    <h3>Gorra Trek</h3>
+                    <p class="description">Liviana y respirable. Ideal para protegerte del sol en travesías.</p>
+                </article>
+
+                <article class="product-card">
+                    <img src="imgs/productos/mochila.webp" alt="Mochila de trekking 45 litros con múltiples bolsillos">
+                    <h3>Mochila 45 L</h3>
+                    <p class="description">Espalda acolchada y correas ajustables. Capacidad ideal para salidas cortas.
+                    </p>
+                </article>
+
+                <article class="product-card">
+                    <img src="imgs/productos/zapatilla.webp" alt="Zapatillas de trekking con suela de alto agarre">
+                    <h3>Zapatilla Trail</h3>
+                    <p class="description">Suela de gran tracción y tejido resistente. Perfectas para terrenos mixtos.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="reseñas" class="reviews">
+            <header>
+                <h2>Reseñas</h2>
+                <p>Opiniones de quienes ya confiaron en nuestros productos de trekking.</p>
+            </header>
+
+            <div class="review-grid">
+                <article class="review-card">
+                    <img src="imgs/perfiles/avatar_1.png" alt="Foto de perfil usuario 1">
+                    <h3>Mariano López</h3>
+                    <p class="role">Aventurero frecuente</p>
+                    <p class="text">“Excelente calidad, las mochilas son muy cómodas y resistentes. Volvería a comprar
+                        sin dudarlo.”</p>
+                </article>
+
+                <article class="review-card">
+                    <img src="imgs/perfiles/avatar_2.png" alt="Foto de perfil usuario 2">
+                    <h3>Carla Gómez</h3>
+                    <p class="role">Guía de montaña</p>
+                    <p class="text">“Los productos superaron mis expectativas. Ideales para travesías largas y climas
+                        variados.”</p>
+                </article>
+
+                <article class="review-card">
+                    <img src="imgs/perfiles/avatar_3.png" alt="Foto de perfil usuario 3">
+                    <h3>Roberto Rivas</h3>
+                    <p class="role">Amante del aire libre</p>
+                    <p class="text">“Excelente atención y calidad. Los detalles y materiales están muy bien logrados.”
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact-form" aria-labelledby="title-contact">
+            <header>
+                <h2 id="title-contact">Contacto</h2>
+                <p>Completá el formulario y te respondemos a la brevedad.</p>
+            </header>
+
+            <form id="contactForm" method="POST" action="https://formspree.io/f/YOUR_FORM_ID">
+                <div class="row">
+                    <div class="field">
+                        <label for="name">Nombre</label>
+                        <input id="name" name="name" type="text" required placeholder="Tu nombre" />
+                    </div>
+
+                    <div class="field">
+                        <label for="email">Correo electrónico</label>
+                        <input id="email" name="email" type="email" required placeholder="nombre@ejemplo.com" />
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" required placeholder="Escribí tu mensaje..."></textarea>
+                </div>
+
+                <div class="actions">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+</body>
+
+</html>
