@@ -72,7 +72,6 @@ body {
     color: #fff;
 }
 
-/* capa oscura para contraste */
 .contact-form::before {
     content: "";
     position: absolute;
@@ -103,7 +102,6 @@ body {
     font-size: 0.95rem;
 }
 
-/* Campos */
 form {
     display: flex;
     flex-direction: column;
@@ -154,7 +152,6 @@ textarea {
     resize: vertical;
 }
 
-/* Botón */
 .actions {
     text-align: center;
     margin-top: 1rem;
@@ -203,7 +200,6 @@ button:hover {
     font-size: 0.95rem;
 }
 
-/* Contenedor de cards */
 .product-list {
     display: flex;
     flex-wrap: wrap;
@@ -211,7 +207,6 @@ button:hover {
     justify-content: center;
 }
 
-/* Card individual */
 .product-card {
     background: #fff;
     border-radius: 10px;
@@ -243,7 +238,6 @@ button:hover {
     line-height: 1.4;
 }
 
-/* Imagen uniforme */
 .product-card img {
     width: 100%;
     aspect-ratio: 3/2;
@@ -274,7 +268,6 @@ button:hover {
     margin-bottom: 2rem;
 }
 
-/* Grid principal */
 .review-grid {
   display: grid;
   gap: 1.5rem;
@@ -317,7 +310,6 @@ button:hover {
     margin-bottom: 1rem;
 }
 
-/* Texto */
 .review-card .text {
     font-size: 0.95rem;
     color: #555;
