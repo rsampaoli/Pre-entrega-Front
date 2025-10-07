@@ -15,6 +15,10 @@ body {
    NAVBAR
    ======================= */
 
+.nav-logo {
+    height: 60px;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -55,6 +59,47 @@ body {
     color: #000;
 }
 
+/* =======================
+   HERO
+   ======================= */
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background: url("imgs/utils/logo_native_outdoors.webp") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+.hero-logo {
+    width: 150px;
+    margin-bottom: 1rem;
+}
+
+.bienvenida {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    border-top: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.bienvenida h2 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.bienvenida p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
 
 /* =======================
    SECCIÓN CONTACTO 
@@ -180,13 +225,13 @@ button:hover {
    ======================= */
 
 .products {
-    margin-top: 4rem;
+    margin-top: 3rem;
     padding-top: 2rem;
 }
 
 .products header {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 .products h2 {
@@ -223,6 +268,7 @@ button:hover {
 
 .product-card:hover {
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    transform: scale(1.01);
 }
 
 .product-card h3 {
@@ -240,8 +286,8 @@ button:hover {
 
 .product-card img {
     width: 100%;
-    aspect-ratio: 3/2;
-    object-fit: cover;
+    aspect-ratio: 320 / 233;
+    object-fit: contain;
     border-radius: 8px;
 }
 
@@ -269,12 +315,12 @@ button:hover {
 }
 
 .review-grid {
-  display: grid;
-  gap: 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  justify-content: center;
-  max-width: 1000px;   
-  margin: 0 auto;      
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .review-card {
@@ -321,20 +367,20 @@ button:hover {
    FOOTER
    ======================= */
 .site-footer {
-  background: #fff;
-  border-top: 1px solid #e2e2e2;
-  color: #666;
-  text-align: center;
-  padding: 1rem 2rem;
-  margin-top: 3rem;
+    background: #fff;
+    border-top: 1px solid #e2e2e2;
+    color: #666;
+    text-align: center;
+    padding: 1rem 2rem;
+    margin-top: 3rem;
 }
 
 .site-footer a {
-  color: #444;
-  text-decoration: none;
-  font-weight: 600;
+    color: #444;
+    text-decoration: none;
+    font-weight: 600;
 }
 
 .site-footer a:hover {
-  color: #000;
+    color: #000;
 }
